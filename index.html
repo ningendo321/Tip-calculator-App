@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&family=Open+Sans&family=Rubik:wght@300&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <title>Tip calculator</title>
+</head>
+<body>
+    
+    <div class="box">
+        <div class="left-div">
+            <div class="bill-div">
+            <label for="bill">Bill</label>
+            <input  type="text" id="bill" placeholder="">
+            <img class="bill-img" src="images/icon-dollar.svg" alt="img">
+            </div>
+            <p style="margin-top: 20px;">Select Tip %</p>
+            <div class="select-tip-div">
+                <p class="select-tip">5%</p>
+                <p class="select-tip">10%</p>
+                <p class="select-tip">15%</p>
+                <input class="custom"  type="text" id="custom" placeholder="custom">
+            </div>
+            <div class="people-div">
+                <label for="people">Number of people</label>
+                <input id="people"  type="tel" placeholder="">
+                <img class="person-img" src="images/icon-person.svg" alt="img">
+                <div class="error">Can't be blank!</div>
+            </div>
+        </div>
+        <div class="right-div">
+            <div class="tip-amount-div">
+                <div>
+                    <p>Tip Amount</p>
+                    <p>/ Person</p>
+                </div>
+                <div class="tip-for-person amount">$0.00</div>
+            </div>
+            <div class="total-div">
+                <div>
+                    <p>Total</p>
+                    <p>/ Person</p>
+                </div>
+                <div class="tip-for-all amount">$0.00</div>
+            </div>
+            <button class="btn">calculate</button>
+        </div>
+        
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
